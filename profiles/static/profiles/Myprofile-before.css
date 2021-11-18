@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Nunito:wght@300&family=Roboto+Slab:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Overpass:wght@300&family=Playfair+Display:wght@600&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+}
+
+/* header styling starts here */
+header { 
+	background: #F2F2F2;
+	padding: 0px;
+ }
+
+#logo{
+ 	margin-left:20px;
+ }
+
+button#logoutbase{
+	border-radius: 5px;
+	background-color:rgb(247, 188, 149);
+	position:absolute;
+	left:230px;
+	top:50px;
+	border-color: maroon;
+}
+
+button#logoutbase a{
+   color:navy;
+   text-decoration: none;
+   font-size: 30px;
+   font-family:Georgia, 'Times New Roman', Times, serif;
+   margin:10px;
+}
+
+button#logoutbase:hover{
+	background-color:chocolate;
+}
+
+#navidiv {
+	background-color: #F2542D; 
+	overflow: hidden;
+}
+
+#navidiv img{
+	margin-left: 30px;
+	padding:0;
+}
+
+#navidiv ul {
+	float: right;
+	list-style-type: none;
+	margin-top: 60px;
+}
+
+#navidiv ul li{
+	display: inline;
+	text-align: center;
+	font-size: 25px;
+	font-family: "Merriweather", "Roboto Slab", serif;
+}
+
+#navidiv ul li a{
+	text-decoration: none;
+	color: white;
+	padding: 5px 20px;
+	transition: 0.4s ease;
+}
+
+#navidiv ul li a:hover{
+	background-color: #eeb76b;
+	color: black;
+}
+/* header styling ends here */
+
+.content{
+	height:100%;
+	width:100%;
+	background-image: linear-gradient(to right, rgba(250, 90, 120, 0.3), rgba(255, 190, 30, 0.3)), url(bg2.gif);
+	background-position: center;
+	padding-bottom: 50px;
+}
+
+.content h3 {
+	font-family: "Playfair Display", sans-serif;
+	font-size: 60px;
+	padding:15px;
+	color: white;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	text-align: center;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 20px;	
+}
+
+p {
+	padding:10px;
+	text-align: center;
+	font-family: "DM Sans", sans-serif;
+	font-size: 40px;
+	color: white;
+}
+
+form {
+	font-family: "Overpass", sans-serif;
+	padding: 10px;
+	margin-left: 40px;
+	font-size: 30px;
+	color: white;
+}
+
+#sign-up-form small{
+	font-size: 15px;
+}
+#sign-up-form ul li{
+	font-family: "Overpass", sans-serif;
+	font-size: 15px;
+	line-height: 20px;
+}
+
+.log-in{
+	margin: 20px;
+	opacity: 0.9;
+	background-color: #562C2C;
+	border-radius: 10px;
+	padding: 70px;
+}
+
+.sign-up{
+	margin: 20px;
+	opacity: 0.9;
+	background-color: #562C2C;
+	border-radius: 10px;
+	padding: 70px;
+}
+
+#log-in-form input {
+	size: 50;
+	width: 80;
+	font-size: 18px;
+	font-family: "Overpass", sans-serif;
+}
+
+#log-in-form label{
+	font-size: 25px;
+	font-family: "Overpass", sans-serif;
+}
+
+#sign-up-form input {
+	size: 50;
+	width: 80;
+	font-size: 18px;
+	font-family: "Overpass", sans-serif;
+}
+
+#sign-up-form label {
+	margin-left: 5px;
+	font-size: 25px;
+	font-family: "Overpass", sans-serif;
+}
+
+form button {
+	background-color: #0E9594;
+	color: white;
+	padding: 10px;
+	font-size: 30px;
+	border-radius: 12px;
+	border: none;
+	font-weight: 600;
+	cursor: pointer;
+	width:150px;
+	transition-duration: 0.3s;
+	display: block;
+	margin-left: 170px;
+	font-size: 30px;
+	font-family: "Overpass", sans-serif;
+	margin-top: 25px;
+}
+
+.submit-sign-up{
+	margin-top: 25px;
+}
+
+button:hover {
+	background-color: #127475;
+}
+
+#log-in-form h6 {
+	text-align: left;
+	font-weight: 100;
+	color:#db1919;
+	margin-left: 20px;
+	padding:15px;
+}
+
+#sign-up-form #password-toggle {
+	color:whitesmoke;
+	text-decoration: underline;
+	margin:0;
+	padding:0;
+	line-height:0;
+	cursor:pointer;
+	transition: all;
+	position:absolute;
+	text-align: right;
+}
+
+#log-in-form #password-toggle1 {
+	font-size:18px;
+	color:whitesmoke;
+	text-decoration: underline;
+	margin:0;
+	padding-top:20px;
+	line-height:0;
+	cursor:pointer;
+	transition: all;
+	position:absolute;
+	text-align: right;
+}
+
+#log-in-form button{
+	margin-top:60px;
+}
+
+#sign-up-form #error {
+	color: red;
+
+}
+
+footer {
+	background-color: #F2542D;
+	padding:10px;
+	font-family: "Merriweather", serif;
+}

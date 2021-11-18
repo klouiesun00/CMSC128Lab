@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Nunito:wght@300&family=Roboto+Slab:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p&family=Nanum+Myeongjo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+}
+
+/* header styling starts here */
+header { 
+	background: #F2F2F2;
+	padding: 0px;
+ }
+
+#logo{
+ 	margin-left:20px;
+ }
+
+ #logoutbase{
+	 border-radius: 5px;
+	 background-color:rgb(247, 188, 149);
+	 position:absolute;
+	 left:230px;
+	 top:50px;
+	 border-color: maroon;
+ }
+
+ #logoutbase a{
+	text-decoration: none;
+	font-size: 30px;
+	font-family:Georgia, 'Times New Roman', Times, serif;
+	margin:10px;
+ }
+
+ #logoutbase:hover{
+	 background-color:chocolate;
+ }
+
+#navidiv {
+	background-color: #F2542D;
+	overflow: hidden;
+
+}
+
+/*for nav bar to be sticky */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+ul {
+	float: right;
+	list-style-type: none;
+	margin-top: 60px;
+}
+
+ul li{
+	display: inline;
+	text-align: center;
+	font-size: 25px;
+	font-family: "Merriweather", "Roboto Slab", serif;
+}
+
+ul li a{
+	text-decoration: none;
+	color: white;
+	padding: 5px 20px;
+	transition: 0.4s ease;
+}
+
+ul li a:hover{
+	background-color: #eeb76b;
+	color: black;
+}
+/* header styling ends here */
+div{
+    height:100%;
+	width:100%;
+    background-image: linear-gradient(to right, rgba(230, 129, 47, 0.705), rgba(255, 120, 30, 0.3));
+    padding:140px;
+	padding-bottom: 200px;
+}
+
+div h1 {
+    font-size: 45px;
+    font-family: 'Titillium Web', sans-serif;
+    color:rgb(45, 78, 78);
+}
+
+div h2 {
+    font-size:30px;
+    font-family: 'PT Sans', sans-serif;
+	padding-top: 40px;
+}
+
+div img {
+	position:absolute;
+	right: 100px;
+	top: 200px;
+	height:400px;
+}
+
+
+footer {
+	background-color: #F2542D;
+	padding:10px;
+	font-family: "Merriweather", serif;
+
+}

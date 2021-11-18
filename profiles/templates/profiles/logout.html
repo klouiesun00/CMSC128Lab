@@ -1,0 +1,25 @@
+{% extends 'pages/base.html'%}
+{% load static %}
+
+{% block style %}
+    <link rel="stylesheet" href="{% static 'profiles/logout.css' %}">
+{% endblock%}
+
+{% block content %}
+    <div>
+        {% if not expired %}
+        <h1>{{ user.username }} has been logged out.</h1>
+        <h2>See you again!</h4>
+        {% elif expired %}
+            <h1> Your session has expired </h1>
+            <h1> due to inactivity or you tried </h1>
+            <h1> to logout without logging in. </h1>
+            <h2> Please log in at the 'My Profile' page. </h2>
+            
+        {% endif %}
+        
+        <img src="{% static 'profiles/logout2.png' %}" alt="logout">
+    </div>
+
+{% endblock %}
+

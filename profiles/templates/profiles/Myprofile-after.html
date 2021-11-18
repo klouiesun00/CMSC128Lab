@@ -1,0 +1,49 @@
+{% extends 'pages/base.html' %}
+{% load static %}
+
+{% block style %}
+	<link rel="stylesheet" href="{% static 'profiles/Myprofile-after.css' %}">
+{% endblock %}
+
+{% block content %}
+	<section class="profile">
+		<div class="info"> 
+			<img src="{{ user.profile.image.url }}" id ="pp" alt="Profile Photo" width="250px" height="250px">
+			<ol>
+				<li><span>username:</span> {{ user.username }} </li>
+				<li><span>name:</span> {{ user.profile.name}} </li>
+				<li><span>birthday:</span> {{ user.profile.birthday }} </li>
+				<li><span>favorite genres:</span> {{ user.profile.genres }} </li>
+				<li><span>no. of books read:</span> {{ user.profile.no_of_books }}</li>
+			</ol>
+			<button type="button"><a href="/edit-profile">Edit profile</a></button>
+			<button type="submit" id='logout'><a href="/logout">Log out</a></button>
+		</div>
+		<div class="faves">
+			<div class="books">
+				<h3>Top 5 Favorite Books</h3>
+				<ol>
+					<li>Harry Potter and the Prisoner of Azkaban by JK Rowling</li>
+					<li>Rich People Problems by Kevin Kwan</li>
+					<li>To All the Boys I've Loved Before by Jenny Han</li>
+					<li>The Hunger Games by Suzanne Collins</li>
+					<li>The Blood of Olympus by Rick Riordan</li>
+				</ol>
+			</div>
+			<div class="authors">
+				<h3>Top 5 Favorite Authors</h3>
+				<ol id="author-list">
+					<li>Rick Riordan</li>
+					<li>John Green</li>
+					<li>JK Rowling</li>
+					<li>Rainbow Rowell</li>
+					<li>Marie Lu</li>
+				</ol>
+			</div>
+		</div>
+	</section>
+{% endblock %}
+
+{% block jaavscript %}
+	<script src="{% static 'profiles/Myprofile-after.js' %}"></script>
+{% endblock %}

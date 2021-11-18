@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Nunito:wght@300&family=Roboto+Slab:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p&family=Nanum+Myeongjo&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+}
+
+/* header styling starts here */
+header { 
+	background: #F2F2F2;
+	padding: 0px;
+ }
+
+#logo{
+ 	margin-left:20px;
+}
+button#logoutbase{
+	border-radius: 5px;
+	background-color:rgb(247, 188, 149);
+	position:absolute;
+	left:230px;
+	top:50px;
+	border-color: maroon;
+}
+
+button#logoutbase a{
+   color:navy;
+   text-decoration: none;
+   font-size: 30px;
+   font-family:Georgia, 'Times New Roman', Times, serif;
+   margin:10px;
+}
+
+button#logoutbase:hover{
+	background-color:chocolate;
+}
+
+
+#navidiv {
+	background-color: #F2542D; 
+	overflow: hidden;
+}
+
+#navidiv img{
+	margin-left: 30px;
+	padding:0;
+}
+
+ul {
+	float: right;
+	list-style-type: none;
+	margin-top: 60px;
+}
+
+ul li{
+	display: inline;
+	text-align: center;
+	font-size: 25px;
+	font-family: "Merriweather", "Roboto Slab", serif;
+}
+
+ul li a{
+	text-decoration: none;
+	color: white;
+	padding: 5px 20px;
+	transition: 0.4s ease;
+}
+
+ul li a:hover{
+	background-color: #eeb76b;
+	color: black;
+
+}
+/* header styling ends here */
+
+.profile {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	background: #f3bda1;
+	padding: 40px;
+}
+
+#pp {
+	border: 3px solid black;
+	border-radius: 20px;
+	margin-top: 50px;
+	margin-left: 150px;
+}
+
+.info ol{
+	list-style-type: none;
+}
+
+.info ol li{
+	margin-left: 60px;
+	padding-top: 20px;
+	padding-bottom: 15px;
+	font-family: "Nunito", sans-serif;
+	line-height: 40px;
+	font-size: 30px;
+}
+
+.info ol li span {
+	font-weight: bold;
+}
+
+.info button {
+	margin-left: 150px;
+	padding: 10px;
+	font-size: 20px;
+	font-family: "Nunito", sans-serif;
+	font-weight: bold;
+	background: #0E9594;
+	border: 2px solid black;
+	border-radius: 8px;
+	letter-spacing: 3px;
+	transition: ease 0.3s;
+}
+
+.info button a{
+	text-decoration: none;
+	color: black;
+}
+
+.info button:hover {
+	cursor: pointer;
+	background: #127475;
+	color: white;
+}
+
+#logout{
+	background: #c52323;
+}
+
+#logout:hover{
+	background: #961123;
+}
+
+h3 {
+	font-family: "M PLUS 1p", sans-serif;
+	font-size: 40px;
+	text-align: center;
+}
+
+.books {
+	margin-top: 40px;
+	padding: 50px;
+	border: 5px solid #fb3640;
+	border-radius: 15px;
+	background: #F5DFBB;
+	filter: drop-shadow(10px 15px 6px #393e46);
+}
+
+.authors {
+	margin-top: 60px;
+	padding: 50px;
+	border: 5px solid #fb3640;
+	border-radius: 15px;
+	background: #F5DFBB;
+	filter: drop-shadow(10px 15px 6px #393e46);
+}
+
+ol {
+	padding: 30px;
+	font-size: 25px;
+	font-family: "Barlow", sans-serif;
+	padding-left: 80px;
+
+}
+
+#author-list {
+	font-size: 30px;
+}
+
+footer {
+	background-color: #F2542D;
+	padding:10px;
+	font-family: "Merriweather", serif;
+}
