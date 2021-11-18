@@ -1,0 +1,34 @@
+{% extends 'pages/base.html' %}
+{% load staticfiles %}
+
+{% block style %}
+<link rel="stylesheet" href="{% static 'pages/for-you.css' %}">
+{% endblock %}
+
+{% block content %}
+	<section class="content1">
+		<h2>Recommendations curated just for you!</h2>
+		<div class="grid-container">
+			<div class="books"> <p>Since you liked Divergent you might like... </p>
+				<ol id="bookrecs">
+					<li>The Hunger Games</li>
+					<li>Legend</li>
+					<li>A Court of Thorns and Roses</li>
+					<li>The Maze Runner</li>
+					<li>The Selection</li>
+				</ol>
+			</div>
+
+			<div class="authors"><p> Since you liked JK Rowling you might like...</p>
+				<ol id="authorrecs">
+					<li>James Dashner</li>
+					<li>Rick Riordan</li>
+					<li>Ransom Riggs</li>
+					<li>C. S. Lewis</li>
+					<li>Stephenie Meyer</li>
+				</ol>
+			</div>
+		</div>
+	</section>
+
+{% endblock %}

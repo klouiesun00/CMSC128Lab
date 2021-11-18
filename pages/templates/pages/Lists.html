@@ -1,0 +1,21 @@
+{% extends 'pages/base.html' %}
+{% load static %}
+
+{% block style %}
+<link rel="stylesheet" href="{% static 'pages/lists.css' %}">
+{% endblock %}
+
+{% block content %}
+	<section class="hero">
+		<div class="grid-container1">
+			<a href="/lists/top-books"><div class="books">Top Books </div></a>
+			<a href="/lists/top-authors"><div class="authors"> Top Authors </div></a>
+		</div>
+		<div class="grid-container2">
+			<a href="/lists/top-genres"><div class="genres"> Top Genres </div></a>
+			<a href="/lists/for-you"><div class="you"> For You </div></a>
+		</div>
+	</section>
+{% endblock %}
+{% block javascript %}
+{% endblock %}

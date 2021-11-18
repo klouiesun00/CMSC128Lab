@@ -1,0 +1,40 @@
+{% extends 'pages/base.html'%}
+{% load static %}
+
+{% block style %}
+<link rel="stylesheet" href="{% static 'pages/homepage.css'%}">
+{% endblock %}
+{% block content %}
+	<section class="introduction">
+		<div class="transbox">
+		<p>Book Shelf is a web application where you can keep track of all the books you've read, and the books you want to read in the future! Create your own profile to save your book list and interact with other users through the forums. Book Shelf is the first web application to offer a place where you can store your books and share your own book reviews. Signing up is easy: just click on the My Profile page, enter your details, and start sharing! </p>  <!-- make this text big and loud -->
+		<p>This web application was inspired by the designer's desire to be able to keep track of all the books she's read and to see what other readers like her have to say about popular novels. 
+		</div>
+	</section>
+
+	<section class="features">
+
+		<div class="icon1"> <h4>Read</h4> <img src="{% static 'pages/read2.png' %}" alt="Read icon"> </div>
+		<div class="icon2"> <h4>Save</h4> <img src="{% static 'pages/save2.png' %}" alt= "Save icon"></div>
+		<div class="icon3"> <h4>Recommend</h4> <img src="{% static 'pages/recommend2.png' %}" alt="Recommend icon"></div>
+		<div class="icon4"> <h4>Review</h4> <img src="{% static 'pages/review2.png' %}" alt="Review icon"></div> 
+	</section>
+
+	<section class="sample-posts">
+		<div class="review">
+			<h6 id="revtitle"> The Tower of Nero by Rick Riordan </h6>
+			<p>Review by Shannon</p>
+			<p>The Tower of Nero is the last installment of Riordan's series, The Trials of Apollo. I've been reading Riordan's books ever since I picked up "The Lightning Thief" 5 years ago, and he never disappoints. Apollo's charismatic personality was not lost in the gripping pages of the book and his character development was written so endearingly that you can't help but to cheer him on. This book wrapped up the series nicely, and I wouldn't expect anything less from Rick Riordan. 10/10! </p>
+			
+		</div>
+		<div class="rec">
+			<h6 id="rectitle"> Recommendation: Crazy Rich Asians series by Kevin Kwan </h6>
+			<p>by Carlton</p>
+			<p>Calling all Southeast Asians or anyone interested reading about the rich lives of these crazy asians!!! I absolutely recommend this series to anyone who wants a good laugh, or wants to see their culture more in a novel because as a Chinese person, I felt very glad to have been represented into such an amazing novel series. This series will not bore you one bit, once you start, you won't be able to stop reading :))</p>
+		</div>
+	</section>
+{% endblock %}
+
+{% block javascript %}
+<script src="{% static 'pages/Homepage.js' %}"></script>
+{% endblock %}

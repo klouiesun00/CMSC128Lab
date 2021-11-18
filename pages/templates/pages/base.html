@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+	<title>Book Shelf </title>
+	
+	{% block style %}
+	
+	{% endblock %}
+</head>
+
+<body>
+	<header>
+		<nav id="navidiv">
+			<a href="/home"> <img src="{% static 'pages/logo.png' %}" id="logo" style="width:180px;height:130px" alt="Book Shelf"> </a>
+			<button type="submit" id='logoutbase'><a href="/logout">Log out</a></button>
+			<ul>
+				<li><a href='/book-reviews'>Book Reviews </a></li>
+				<li><a href='/recommendations'>Recommendations Forums</a></li>
+				<li><a href='/log-in-sign-up'>My Profile </a></li>
+				<li><a href='/my-books'>My Books </a></li>
+				<li><a href="/lists">Lists </a></li>
+			</ul>
+		</nav>
+	</header>
+
+	{% block content %}
+	{% endblock %}
+
+	<footer>
+		Book Shelf 2021 
+	</footer>
+	{% block javascript %}
+	{% endblock %}
+	
+</body>
+</html>

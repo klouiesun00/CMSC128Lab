@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Nunito:wght@300&family=Roboto+Slab:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@500&family=Lora:wght@500&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+}
+
+/* header styling starts here */
+header { 
+	background: #F2F2F2;
+	padding: 0px;
+ }
+
+button#logoutbase{
+	border-radius: 5px;
+	background-color:rgb(247, 188, 149);
+	position:absolute;
+	left:230px;
+	top:50px;
+	border-color: maroon;
+}
+
+button#logoutbase a{
+   color:navy;
+   text-decoration: none;
+   font-size: 30px;
+   font-family:Georgia, 'Times New Roman', Times, serif;
+   margin:10px;
+}
+
+button#logoutbase:hover{
+	background-color:chocolate;
+}
+
+#logo{
+ 	margin-left:20px;
+ }
+
+#navidiv {
+	background-color: #F2542D;
+	overflow: hidden;
+}
+
+/*for nav bar to be sticky */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+ul {
+	float: right;
+	list-style-type: none;
+	position:relative;
+	top:60px;
+}
+
+ul li{
+	display: inline;
+	text-align: center;
+	font-size: 25px;
+	font-family: "Merriweather", "Roboto Slab", serif;
+}
+
+ul li a{
+	text-decoration: none;
+	color: white;
+	padding: 5px 20px;
+	transition: 0.4s ease;
+}
+
+ul li a:hover{
+	background-color: orange;
+	color: black;
+}
+/* header styling ends here */
+
+#reviews {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url(bg7.jpg);
+	padding: 50px;
+}
+
+h1 {
+	padding-bottom: 40px;
+	font-size: 40px;
+	font-family: "Karla", sans-serif;
+	position: relative;
+	left: 30px;
+}
+
+#post { 
+	background-color: #eabf9f;
+	position: absolute;
+	top:180px;
+	right:280px;
+	padding:15px;
+	font-family: "Nunito";
+	font-size: 25px;
+	font-style: oblique;
+	text-decoration: none;
+	color:black;
+	border: none;
+	
+}
+
+#post:hover {
+	background-color: #b68973;
+	cursor: pointer;
+	color: white;
+}
+/* buttons for collapsible class */
+.collapsible {
+  background-color: #e36bae;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 80%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 25px;
+  font-family: "Lora", serif;
+  position:relative;
+  left: 130px;
+  border: 2px solid #1e212d;
+  border-radius: 5px;
+}
+
+/* for when button is clicked or hovered over */
+.active, .collapsible:hover {
+  background-color: #ff9292;
+}
+
+/* content of collapsible buttons */
+h3 {
+	text-align: center;
+}
+
+.content {
+  padding: 20px 40px;
+  display: none;
+  overflow: hidden;
+  background-color: #faf3e0;
+  font-size: 30px;
+  line-height: 40px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+footer {
+	background-color: #F2542D;
+	padding:10px;
+	font-family: "Merriweather", serif;
+
+}

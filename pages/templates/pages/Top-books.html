@@ -1,0 +1,99 @@
+{% extends 'pages/base.html'%}
+{% load static %}
+
+{% block style %}
+<link rel="stylesheet" href="{% static 'pages/Top-books.css' %}">
+{% endblock %}
+
+{% block content %}
+	<!-- DISCLAIMER: summaries were not written by me, they were copy-pasted from Google search -->
+	<section class="content">
+		<div class="title"> <h3>Top Books of the Month </h3> </div>
+		<div class="images">
+			<a href="#"><img src="{% static 'pages/CRA.jpg' %}" class="cover" id="CRA" alt="Crazy Rich Asians" width="260px" height="350px"></a>
+				<div id="modal1" class="modal">
+					<div class="modal-content">
+						<span class="close" id="close1">&times;</span>
+						<h3>Crazy Rich Asians by Kevin Kwan</h3>
+						<p>Crazy Rich Asians is a funny fiction novel written by Kevin Kwan that highlights and ridicules the lifestyle of upper-class Asian families and society. The book is about three wealthy, upper-class Chinese families, and how they undermine those who are not as rich and influential as them.</p>
+					</div>
+				</div>
+			<a href="#"><img src="{% static 'pages/CoS.jpg' %}" class="cover" id="CoS" alt="Chamber of Secrets" width="260px" height="350px"></a>
+				<div id="modal2" class="modal">
+					<div class="modal-content">
+						<span class="close" id="close2">&times;</span>
+						<h3>Harry Potter and the Chamber of Secrets by JK Rowling</h3>
+						<p>The plot follows Harry's second year at Hogwarts School of Witchcraft and Wizardry, during which a series of messages on the walls of the school's corridors warn that the "Chamber of Secrets" has been opened and that the "heir of Slytherin" would kill all pupils who do not come from all-magical families.</p>
+					</div>
+				</div>
+			<a href="#"><img src="{% static 'pages/AtBP.jpg' %}" class="cover" id="AtBP"alt="All the Bright Places" width="260px" height="350px"></a>
+				<div id="modal3" class="modal">
+					<div class="modal-content">
+						<span class="close" id="close3">&times;</span>
+						<h3>All thr Bright Places by Jennifer Niven</h3>
+						<p>All the Bright Places is a compelling and beautiful story about a girl who learns to live from a boy who intends to die. Theodore Finch is fascinated by death, and he constantly thinks of ways he might kill himself. But each time, something good, no matter how small, stops him.</p>
+					</div>
+				</div>
+			<a href="#"><img src="{% static 'pages/IGYtS.jpg' %}" class="cover" id="IGYtS" alt="I'll Give You the Sun" width="260px" height="350px"></a>
+				<div id="modal4" class="modal">
+					<div class="modal-content">
+						<span class="close" id="close4">&times;</span>
+						<h3>I'll Give You the Sun by Jandy Nelson</h3>
+						<p>I'll Give You the Sun, is a story of art, love and loss, narrated by twins Noah and Jude. At the beginning of the novel, the twins are extremely close; Noah the shy "revolutionary", who spends all his time drawing, and Jude, confident and talkative, whose free time involves surfing and cliff diving.</p>
+					</div>
+				</div>
+			<a href="#"><img src="{% static 'pages/TPoBaW.jpg' %}" class="cover" id="TPoBaW" alt="The Perks of being a Wallflower" width="260px" height="350px"></a>
+				<div id="modal5" class="modal">
+					<div class="modal-content">
+						<span class="close" id="close5">&times;</span>
+						<h3>The Perks of Being a Wallflower by Stephen Chbosky</h3>
+						<p>The Perks of Being a Wallflower is a classic coming-of-age story about fifteen-year-old Charlie, who is coping with the suicide of his friend, Michael. To lessen the fear and anxiety of starting high school alone, Charlie starts writing letters to a stranger, someone he heard was nice but has never met in person.</p>
+					</div>
+				</div>
+			<a href="#"><img src="{% static 'pages/THG.jpg' %}" class="cover" id="THG" alt="The Hunger Games" width="260px" height="350px"></a>
+				<div id="modal6" class="modal">
+					<div class="modal-content">
+						<span class="close" id="close6">&times;</span>
+						<h3>The Hunger Games by Suzanne Collins</h3>
+						<p>The story is centered on a 16-year-old girl, Katniss Everdeen and her struggle for survival in dystopia. Each year, as a punishment for the failed rebellion by District 13, the 12 Panem Districts are forced to pay tribute to the ruthless Capitol regime. The story begins on the day of reaping at District 12.</p>
+					</div>
+				</div>
+			<a href="#"><img src="{% static 'pages/EaP.jpg' %}" class="cover" id="EaP" alt="Eleanor & Park" width="260px" height="350px"></a>
+				<div id="modal7" class="modal">
+					<div class="modal-content">
+						<span class="close" id="close7">&times;</span>
+						<h3>Eleanor & Park by Rainbow Rowell</h3>
+						<p>Eleanor, a chubby 16-year-old girl with curly red hair, and Park, a half-Korean, 16-year-old boy, meet on a school bus on Eleanor's first day at the school and gradually connect through comic books and mix tapes of '80s music, sparking a love story. Park grows to love Eleanor and Eleanor learns to understand Park.</p>
+					</div>
+				</div>
+			<a href="#"><img src="{% static 'pages/L.jpg' %}" class="cover" id="L" alt="Legend" width="260px" height="350px"></a>
+				<div id="modal8" class="modal">
+					<div class="modal-content">
+						<span class="close" id="close8">&times;</span>
+						<h3>Legend by Marie Lu</h3>
+						<p>Far in the future, Los Angeles has been flooded and is ruled by the evil, totalitarian Republic. The most wanted criminal in this society is fifteen-year-old Day, a homeless boy who steals to survive and to help the poor, and undermines the Republic's war effort against the Colonies through vandalism.</p>
+					</div>
+				</div>
+			<a href="#"><img src="{% static 'pages/ED.jpg' %}" class="cover2" id="ED" alt="Every Day" width="260px" height="350px"></a>
+				<div id="modal9" class="modal">
+					<div class="modal-content">
+						<span class="close" id="close9">&times;</span>
+						<h3>Every Day by David Levithan</h3>
+						<p>Every Day by David Levithan follows the story of A, a being who wakes up in the body of a different person each morning. For a full day, they live as if they were that person. A cannot choose which body they inhabit each day, but they can access the person's memories to try and act as normally as possible.</p>
+					</div>
+				</div>
+			<a href="#"><img src="{% static 'pages/TLT.jpg' %}" class="cover2" id="TLT" alt="The Lightning Thief" width="260px" height="350px"></a>
+				<div id="modal10" class="modal">
+					<div class="modal-content">
+						<span class="close" id="close10">&times;</span>
+						<h3>The Lightning Thief by Rick Riordan</h3>
+						<p>The Lightning Thief is a light-hearted fantasy about a modern 12-year-old boy who learns that his true father is Poseidon, the Greek god of the sea. Percy sets out to become a hero by undertaking a quest across the United States to find the entrance to the Underworld and stop a war between the gods.</p>
+					</div>
+				</div>
+		</div>  
+	</section>
+{% endblock %}
+
+{% block javascript %}
+<script src="{% static 'pages/Top-books.js' %}"></script>
+{% endblock %}

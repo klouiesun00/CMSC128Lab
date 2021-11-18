@@ -1,0 +1,33 @@
+{% extends 'pages/base.html'%}
+{% load staticfiles %}
+
+{% block style %}
+<link rel="stylesheet" href="{% static 'pages/book-reviews.css' %}">
+{%endblock%}
+{% block content %}
+	<!-- DISCLAIMER: book reviews were all taken, word for word, from goodreads -->
+	<section class='hero'>
+		<div id="reviews">
+			<h1>Recent book reviews</h1>
+
+			{% if user.is_authenticated %}
+				<a href="/book-reviews/make-post" id="post">Post a Book Review </a>
+			{% else %}
+				<button id="post" onclick="alert('Please login to post a review.')">Post a Book Review</button>
+			{% endif %}
+
+			{% for post in object_list %}
+			<button type="button" class="collapsible">{{post.title}}</button>
+			<div class='content'>
+				<h3>{{post.title}}</h3>
+				<p>Review by {{post.poster}} </p>
+				<p>{{post.content}}</p>
+			</div>
+			{% endfor %}
+		</div>
+	</section>
+{% endblock %}
+
+{% block javascript %}
+<script src="{% static 'pages/book-reviews.js' %}"></script>
+{% endblock %}

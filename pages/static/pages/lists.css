@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Nunito:wght@300&family=Roboto+Slab:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@600&family=Righteous&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+}
+
+header { 
+	background-color: #f2f2f2;
+	padding: 0px;
+ }
+
+button#logoutbase{
+	border-radius: 5px;
+	background-color:rgb(247, 188, 149);
+	position:absolute;
+	left:230px;
+	top:50px;
+	border-color: maroon;
+}
+
+button#logoutbase a{
+   color:navy;
+   text-decoration: none;
+   font-size: 30px;
+   font-family:Georgia, 'Times New Roman', Times, serif;
+   margin:10px;
+}
+
+button#logoutbase:hover{
+	background-color:chocolate;
+}
+
+#logo{
+ 	margin-left:20px;
+}
+
+#navidiv {
+	background-color: #F2542D;
+	overflow: hidden;
+}
+
+#navidiv img{
+	margin-left: 30px;
+	padding:0;
+}
+
+ul {
+	float: right;
+	list-style-type: none;
+	margin-top: 60px;
+}
+
+ul li{
+	display: inline;
+	text-align: center;
+	font-size: 25px;
+	font-family: "Merriweather", "Roboto Slab", serif;
+}
+
+ul li a{
+	text-decoration: none;
+	color: white;
+	padding: 5px 20px;
+	transition: 0.4s ease;
+}
+
+ul li a:hover{
+	background-color: orange;
+	color: black;
+}
+
+.hero {
+	padding:100px;
+	background-image: linear-gradient(#127475, #F5DFBB);
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+.hero a{  /* for all links */
+	text-decoration: none;
+	font-family: "Josefin Slab", sans-serif;
+	font-size:40px;
+	transition:0.2s ease;
+	color:black;
+	font-weight: 800;
+	text-shadow: 2px 2px white;
+	font-weight:bold;
+}
+
+.grid-container1 {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 40px;
+	
+}
+
+.grid-container2 {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 40px;
+	padding-top: 40px;
+}
+
+.books{
+	text-align: center;
+	padding: 30px;
+	background-image: url(pattern5.jpg);
+	background-position: 0% 20%;
+	border: 2px solid black;
+	border-radius: 5px;
+	padding:40px;
+	transition: transform 0.6s;
+	
+}
+
+.books:hover {	/*creates the grow effect*/ 
+	transform: scale(1.1);
+}
+
+.authors {
+	text-align: center;
+	padding: 30px;
+	background-image: url(pattern5.jpg);
+	background-position: 20% 20%;
+	border: 3px solid black;
+	border-radius: 5px;
+	padding:40px;
+	transition: transform 0.6s;
+}
+
+.authors:hover {
+	transform: scale(1.1);
+}
+
+.genres {
+	text-align: center;
+	padding: 30px;
+	background-image: url(pattern5.jpg);
+	background-position: 40% 30%;
+	border: 3px solid black;
+	border-radius: 5px;
+	padding:40px;
+	transition: transform 0.6s;
+}
+
+.genres:hover {
+	transform: scale(1.1);
+}
+
+.you {
+	text-align: center;
+	padding: 30px;
+	background-image: url(pattern5.jpg);
+	background-position: 30% 50%;
+	border: 3px solid black;
+	border-radius: 5px;
+	padding:40px;
+	transition: transform 0.6s; 
+}
+
+.you:hover {
+	transform: scale(1.1);
+}
+
+footer {
+	background-color: #F2542D;
+	padding:10px;
+	font-family: "Merriweather", serif;
+}
