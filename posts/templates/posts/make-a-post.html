@@ -1,0 +1,21 @@
+{% extends 'pages/base.html' %}
+{% load staticfiles %}
+
+{% block style %}
+<link rel="stylesheet" href="{% static 'posts/make-a-post.css' %}">
+{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <h1>Create your post here!</h1>
+    <div class="container">
+        <form id="post-form" method="POST"> 
+            {% csrf_token %}
+            {{ form.as_p}}
+            <button><a name='cancel' href="/book-reviews">Cancel</a></button>
+            <button type="submit" name="post">Post</button>
+        </form>
+    </div>
+</section>
+
+{% endblock %}
